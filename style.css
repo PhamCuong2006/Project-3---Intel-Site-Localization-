@@ -1,378 +1,126 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  color: #2c3e50;
-  background: #f0f9f4;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
 header {
-  background: #17c45f;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  display: flex;
-  flex-direction: row; 
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  width: 100vw;           /* Make header cover the full width */
-  min-width: 100vw;        /* Prevent shrinking on small screens */
-  box-sizing: border-box;  /* Include padding in width */
-  left: 0;
-  right: 0;
-  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 header .logo {
-  height: 40px;
+  height: 80px;
+  background: #fff;
 }
-
-
-.main-content {
-  overflow-x: hidden;
-  box-sizing: border-box;
-  margin: 0 auto;
-  width: 100vw; 
-  background-image: url(images/mainbackground.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;       
-  background-position: center;  
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-
-.scroll-section {
-  overflow-x: hidden;
-  box-sizing: border-box;
-  flex: 1;
-  padding: 2rem;
-  text-align: center;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.scroll-section h2 {
-  margin-bottom: 1.5rem;
-  font-size: 1.2rem;
-  color: #0071c5;
-}
-
 
 h1 {
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
 }
 
-.scroll-section h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1.5rem;
+.card:hover{
+  transform: translateY(-10px);
+  transition: transform 0.3s ease-in-out;
 }
 
-.scroll-item h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-
-.scroll-menu {
-  display: flex;
-  overflow-x: auto;
-  gap: 1.5rem;
-  flex-wrap: nowrap;
-  padding-bottom: 1rem;
-  justify-content: flex-start;
-  scroll-padding: 1rem;
-  padding-top: 1.2rem;
-}
-
-.scroll-item {
-  flex: 0 0 calc(25% - 1.125rem); 
-  min-width: 220px;
-  max-width: 300px;
-  max-height:320px;
-  background: #ffffff;
-  border: 2px solid #27ae60;
-  border-radius: 12px;
-  padding: 2.5rem 2rem;
-  text-align: left;
-  scroll-snap-align: start;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  box-sizing: border-box;
-  word-break: break-word;
-  overflow-wrap: break-word;
-  max-width: 100%;
-}
-
-.scroll-menu::-webkit-scrollbar {
-  height: 8px;
-}
-
-.scroll-menu::-webkit-scrollbar-thumb {
-  background: #27ae60;
-  border-radius: 4px;
-}
-
-
-.scroll-item:hover {
-  box-shadow: 0px 10px 10px rgb(253, 255, 126);
-  transform: scale(1.05);
-}
-
-.scroll-item h3 {
-  color: #0071c5;
-  margin-bottom: 0.5rem;
-}
-
-.scroll-item p {
-  font-size: 1rem;
-  color: #b70808;
-  line-height: 1.4;
-  font-weight: bold;
-}
-.scroll-item a {
-  display: inline-block;
-  margin-top: 1rem;
-  color: #17c45f;
-  text-decoration: none;
-}
-
-
-
-.scroll-item .website-image {
+.carousel .card {
   width: 100%;
   max-width: 320px;
-  max-height: 300px;
-  object-fit: contain;
-  border-radius: 8px;
-  display: block;
-  margin: 0 auto 1.5rem auto;
-  transition: filter 0.3s;
-}
-
-.scroll-item .image-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 90%;
-  transform: translate(-50%, -50%);
-  background: rgba(23, 196, 95, 0.95);
-  color: #fff;
-  padding: 1rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  text-align: center;
-  z-index: 2;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-
-}
-
-
-.scroll-item:hover .image-overlay {
-  opacity: 1;
-}
-
-/* Future section flex row styling */
-.future-flex-row {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  gap: 2rem;
-  margin: 2rem auto 0 auto;
-  max-width: 1200px;
-  width: 100%;
-  padding: 0 1rem;
-  box-sizing: border-box;
-}
-
-.future-flex-row .future-box {
-  flex: 1;
-  min-width: 250px;
-  max-width: 300px;
-  background: #ffffff;
-  border: 2px solid #27ae60;
-  border-radius: 12px;
-  padding: 2rem;
-  text-align: center;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-
-.future-flex-row .future-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-}
-
-.future-flex-row .future-box h4 {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  color: #0071c5;
-}
-
-.future-flex-row .future-box p {
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
-}
-
-.future-flex-row .future-box a {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background: #17c45f;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background 0.3s ease;
-}
-
-.future-flex-row .future-box a:hover {
-  background: #28d68f;
-}
-
-.future-flex-row .future-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.future-section {
+  height: 400px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;    /* Center content horizontally */
-  justify-content: center;
-  text-align: center;     /* Center text */
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.carousel .card-img-top {
   width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
-.future-section h2 {
-  font-size: 1.6rem;
-  margin-top: 1.5rem;
-  color: #0071c5;
+/* Hover effect for carousel card elements */
+.carousel .card:hover,
+.future-box.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  transition: transform 0.3s;
 }
 
+/* Smooth transition for normal state */
+.carousel .card,
+.future-box.card {
+  transition: transform 0.3s;
+}
+
+/* Improve font for contrast and readability for header tags used in the HTML file */
+h3, h4 {
+  font-family: 'Segoe UI Semibold', 'Arial', 'Helvetica Neue', Arial, sans-serif;
+  color: #14379a;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+
+/* Always center the carousel in both RTL and LTR */
+.carousel,
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto; /* Prevent Bootstrap RTL from flipping carousel direction */
+}
+
+/* Ensure carousel controls are positioned correctly in both directions */
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Place next button to the right and prev button to the left, for both RTL and LTR */
+.carousel-control-prev {
+  left: 0;
+  right: auto;
+  inset-inline-start: 0;
+  inset-inline-end: auto;
+}
+
+.carousel-control-next {
+  right: 0;
+  left: auto;
+  inset-inline-end: 0;
+  inset-inline-start: auto;
+}
+
+/* Style the card elements in the future section to be the same size */
+.bg-primary .card {
+  height: 340px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.bg-primary .card-img-top {
+  height: 140px;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.bg-primary .card-body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive adjustment for small screens */
 @media (max-width: 768px) {
-  header{
-    flex-direction: column;
+  .bg-primary .card {
+    min-height: 260px;
+    height: 300px;
+    max-width: 350px;
   }
-
-  header .logo{
-    height: 60px;
-  }
-
-  header h1{
-    font-size: 2rem;
-  }
-
-  .main-content, .scroll-section {
-    max-width: 100vw;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    overflow-x: hidden;
-  }
-
-  .scroll-menu {
-    display: flex;
-    flex-direction: column;      
-    align-items: center;         
-    justify-content: flex-start;
-    width: 100%;
-    box-sizing: border-box;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    gap: 1rem;        
-    max-height: 70vh;           
-    overflow-y: auto;           
-    overflow-x: hidden;
-  }
-
-  .scroll-item {
-    max-width: 300px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem 0.5rem;
-    text-align: center;
-    box-sizing: border-box;
-    overflow: hidden;
-    height: 35vh;               
-    min-height: 140px;
-    max-height: 35vh;
-  }
-
-  .scroll-item .website-image {
-    max-width: 95vw;
-    width: 100%;
-    height: auto;
-    max-height: 140px;
-    aspect-ratio: auto;
-    margin-bottom: 1rem;
-  }
-
-  h1 {
-    font-size: 1.4rem;
-    margin-bottom: 0.3rem;
-  }
-
-  .scroll-section h2 {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-  }
-
-  .scroll-item h3 {
-    font-size: 1rem;
-    margin-bottom: 0.3rem;
-  }
-
-  /* Future section flex row styling */
-  .future-flex-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    max-width: 100%;
-    width: 100%;
-    margin: 1rem auto 0 auto;
-    margin-top: 2rem;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    box-sizing: border-box;
-    justify-items: center;
-  }
-
-  .future-flex-row .future-box {
-    max-width: 95vw;
-    width: 100%;
-    min-width: 0;
-    height: auto;
-    padding: 1.2rem 0.8rem;
-    margin: 0 auto;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
+  .bg-primary .card-img-top {
+    height: 130px;
   }
 }

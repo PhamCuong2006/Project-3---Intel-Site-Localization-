@@ -1,238 +1,292 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Intel Growth & Sustainability Roadmap</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Header -->
-  <header>
+  <header class="bg-primary text-white text-center d-flex flex-row align-items-center justify-content-center">
     <img src="images/logo.png" alt="Intel Logo" class="logo">
-    <h1>Intel Growth & Sustainability Roadmap</h1>
+    <h1 class="p-3">Intel Growth & Sustainability Roadmap</h1>
   </header>
 
-  <main class="main-content">
-    <!-- Horizontal Scroll Section -->
-    <section class="scroll-section">
-      <h2>Intel's Journey: Growth, Innovation, and Sustainability</h2>
-      <div class="scroll-menu">
-        <div class="scroll-item">
-          <h3>1968</h3>
-          <img src="images/1968.jpg" alt="Intel Founders" class="website-image">
-          <div class="image-overlay">
-            Intel was founded by Robert Noyce and Gordon Moore, marking the birth of the microprocessor era.
+  <div class="container-fluid py-4" style="background-image: url('images/mainbackground.jpg'); background-size: cover; background-position: center;">
+    <h2 class="text-white mt-4 mb-4 text-center">Intel's Journey: Growth, Innovation, and Sustainability</h2>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8">
+        <div id="intelCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <!-- Example card item (repeat for each year) -->
+            <div class="carousel-item active">
+              <div class="card">
+                <img src="images/1968.jpg" class="card-img-top" alt="Intel Founders">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">1968</h3>
+                  <p class="card-text">Intel was founded by Robert Noyce and Gordon Moore, marking the birth of the microprocessor era.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Repeat the block below for each year, changing image, year, and text -->
+            <div class="carousel-item">
+              <div class="card">
+                <img src="images/1971.jpg" class="card-img-top" alt="4004 microprocessor">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">1971</h3>
+                  <p class="card-text">Intel introduces the 4004, the world’s first commercial microprocessor, shrinking computers into smaller, more energy-efficient devices.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="images/1985.jpg" class="card-img-top" alt="80386 processor">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">1985</h3>
+                  <p class="card-text">Intel launches the 80386 processor, enabling advanced multitasking with better energy per operation.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="images/1992.jpg" class="card-img-top" alt="ISO 14001">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">1992</h3>
+                  <p class="card-text">Intel opens the first ISO 14001-certified environmental management system in the semiconductor industry.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="images/1995.jpg" class="card-img-top" alt="Pentium Pro processors">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">1995</h3>
+                  <p class="card-text">Pentium Pro processors are introduced, delivering higher performance-per-watt ratios and advancing energy efficiency in computing.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="images/1998.jpg" class="card-img-top" alt="First EHS report">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">1998</h3>
+                  <p class="card-text">Intel publishes its first Environmental, Health, and Safety report, establishing early transparency standards in the technology sector.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="images/2001.jpg" class="card-img-top" alt="Cut energy per chip use, aligning Moore’s Law">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">2001</h3>
+                  <p class="card-text">Intel commits to reducing per-chip energy use, aligning Moore’s Law with energy efficiency and setting ambitious sustainability goals for operations.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="images/2008.png" class="card-img-top" alt="Intel Core™ processors">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">2008</h3>
+                  <p class="card-text">Intel launches the Intel Core™ processors, achieving major gains in performance-per-watt and furthering energy-efficient computing.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="images/2009.jpg" class="card-img-top" alt="Green power approach">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">2009</h3>
+                  <p class="card-text">Intel becomes the largest voluntary purchaser of green power in the U.S., setting a precedent for corporate renewable energy adoption.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="images/2010.jpg" class="card-img-top" alt="First conflict-free microprocessors">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">2010</h3>
+                  <p class="card-text">Intel manufactures the first conflict-free microprocessors, ensuring ethical sourcing of tin, tungsten, tantalum, and gold.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="images/2012.png" class="card-img-top" alt="Water recycling projects">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">2012</h3>
+                  <p class="card-text">Intel begins large-scale water recycling projects, returning billions of gallons of water to local communities.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="images/2014.jpg" class="card-img-top" alt="100% conflict-free minerals">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">2014</h3>
+                  <p class="card-text">Intel achieves 100% conflict-free minerals in all products, advancing ethical supply chain practices.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="images/2017.jpg" class="card-img-top" alt="80% renewable electricity usage">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">2017</h3>
+                  <p class="card-text">Intel reaches 80% renewable electricity usage globally, making significant progress toward its sustainability goals.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="images/2018.jpg" class="card-img-top" alt="Net positive water use">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">2018</h3>
+                  <p class="card-text">Intel achieves net positive water use in the U.S. and India, returning more water to communities than it consumes.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="images/2020.jpg" class="card-img-top" alt="100% renewable electricity">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">2020</h3>
+                  <p class="card-text">Intel pledges to achieve 100% renewable electricity globally by 2030, net positive water use, and zero waste to landfill.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="images/2021.png" class="card-img-top" alt="RISE strategy">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">2021</h3>
+                  <p class="card-text">Intel publishes its RISE strategy (Responsible, Inclusive, Sustainable, Enabling), setting measurable ESG goals for the next decade.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="images/2022.jpg" class="card-img-top" alt="Investment for sustainable semiconductor">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">2022</h3>
+                  <p class="card-text">Intel announces a $300M global R&D investment for sustainable semiconductor manufacturing, accelerating innovation in green technology.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="images/2023.png" class="card-img-top" alt="Massive recycling">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">2023</h3>
+                  <p class="card-text">Intel reaches 93% renewable electricity worldwide and restores nearly 9 billion gallons of water to local communities.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="images/2024.jpg" class="card-img-top" alt="AI for Climate Research initiatives">
+                <div class="card-body">
+                  <h3 class="card-title text-primary">2024</h3>
+                  <p class="card-text">Intel expands AI for Climate Research initiatives, enabling smarter grids, renewable energy forecasting, and sustainable farming.</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <p>
-            Intel foundation.
-          </p>
-        </div>
-        <div class="scroll-item">
-          <h3>1971</h3>
-          <img src="images/1971.jpg" class="website-image">
-          <div class="image-overlay">
-            Intel introduces the 4004, the world’s first commercial microprocessor, shrinking computers into smaller, more energy-efficient devices. Early chips showed that scaling transistors improved performance and reduced material usage—laying groundwork for sustainable computing.
-          </div>
-          <p>
-            4004 microprocessor.
-          </p>
-        </div>
-        <div class="scroll-item">
-          <h3>1985</h3>
-          <img src="images/1985.jpg" class="website-image">
-          <div class="image-overlay">
-            Intel launches the 80386 processor, enabling advanced multitasking with better energy per operation. Manufacturing efficiency improvements begin, cutting waste and optimizing cleanroom practices.
-          </div>
-          <p>
-            80386 processor.
-          </p>
-        </div>
-        <div class="scroll-item">
-          <h3>1992</h3>
-          <img src="images/1992.jpg" class="website-image">
-          <div class="image-overlay">
-            Intel opens the first ISO 14001-certified environmental management system in the semiconductor industry, setting a new standard for environmental responsibility.
-          </div>
-          <p>
-            ISO 14001
-          </p>
-        </div>
-        <div class="scroll-item">
-          <h3>1995</h3>
-          <img src="images/1995.jpg" class="website-image">
-          <div class="image-overlay">
-            Pentium Pro processors are introduced, delivering higher performance-per-watt ratios and advancing energy efficiency in computing.
-          </div>
-          <p>
-            Pentium Pro processors
-          </p>
-        </div>
-        <div class="scroll-item">
-          <h3>1998</h3>
-          <img src="images/1998.jpg" class="website-image">
-          <div class="image-overlay">
-            Intel publishes its first Environmental, Health, and Safety report, establishing early transparency standards in the technology sector.
-          </div>
-          <p>
-            First EHS report
-          </p>
-        </div>
-        <div class="scroll-item">
-          <h3>2001</h3>
-          <img src="images/2001.jpg" class="website-image">
-          <div class="image-overlay">
-            Intel commits to reducing per-chip energy use, aligning Moore’s Law with energy efficiency and setting ambitious sustainability goals for operations.
-          </div>
-          <p>
-            Cut energy per chip use, aligning Moore’s Law
-          </p>
-        </div>
-        <div class="scroll-item">
-          <h3>2008</h3>
-          <img src="images/2008.png" class="website-image">
-          <div class="image-overlay">
-            Intel launches the Intel Core™ processors, achieving major gains in performance-per-watt and furthering energy-efficient computing.
-          </div>
-          <p>
-            Intel Core™ processors
-          </p>
-        </div>
-        <div class="scroll-item">
-          <h3>2009</h3>
-          <img src="images/2009.jpg" class="website-image">
-          <div class="image-overlay">
-            Intel becomes the largest voluntary purchaser of green power in the U.S., setting a precedent for corporate renewable energy adoption.
-          </div>
-          <p>
-            Green power approach
-          </p>
-        </div>
-        <div class="scroll-item">
-          <h3>2010</h3>
-          <img src="images/2010.jpg" class="website-image">
-          <div class="image-overlay">
-            Intel manufactures the first conflict-free microprocessors, ensuring ethical sourcing of tin, tungsten, tantalum, and gold.
-          </div>
-          <p>
-            First conflict-free microprocessors
-          </p>
-        </div>
-        <div class="scroll-item">
-          <h3>2012</h3>
-          <img src="images/2012.png" class="website-image">
-          <div class="image-overlay">
-            Intel begins large-scale water recycling projects, returning billions of gallons of water to local communities.
-          </div>
-          <p>
-            Water recycling projects
-          </p>
-        </div>
-        <div class="scroll-item">
-          <h3>2014</h3>
-          <img src="images/2014.jpg" class="website-image">
-          <div class="image-overlay">
-            Intel achieves 100% conflict-free minerals in all products, advancing ethical supply chain practices.
-          </div>
-          <p>
-            100% conflict-free minerals
-          </p>
-        </div>
-        <div class="scroll-item">
-          <h3>2017</h3>
-          <img src="images/2017.jpg" class="website-image">
-          <div class="image-overlay">
-            Intel reaches 80% renewable electricity usage globally, making significant progress toward its sustainability goals.
-          </div>
-          <p>
-            80% renewable electricity usage
-          </p>
-        </div>
-        <div class="scroll-item">
-          <h3>2018</h3>
-          <img src="images/2018.jpg" class="website-image">
-          <div class="image-overlay">
-            Intel achieves net positive water use in the U.S. and India, returning more water to communities than it consumes.
-          </div>
-          <p>
-            Net positive water use
-          </p>
-        </div>
-        <div class="scroll-item">
-          <h3>2020</h3>
-          <img src="images/2020.jpg" class="website-image">
-          <div class="image-overlay">
-            Intel pledges to achieve 100% renewable electricity globally by 2030, net positive water use, and zero waste to landfill.
-          </div>
-          <p>
-            100% renewable electricity
-          </p>
-        </div>
-        <div class="scroll-item">
-          <h3>2021</h3>
-          <img src="images/2021.png" class="website-image">
-          <div class="image-overlay">
-            Intel publishes its RISE strategy (Responsible, Inclusive, Sustainable, Enabling), setting measurable ESG goals for the next decade.
-          </div>
-          <p>
-            RISE strategy
-          </p>
-        </div>
-        <div class="scroll-item">
-          <h3>2022</h3>
-          <img src="images/2022.jpg" class="website-image">
-          <div class="image-overlay">
-            Intel announces a $300M global R&D investment for sustainable semiconductor manufacturing, accelerating innovation in green technology.
-          </div>
-          <p>
-            Investment for sustainable semiconductor
-          </p>
-        </div>
-        <div class="scroll-item">
-          <h3>2023</h3>
-          <img src="images/2023.png" class="website-image">
-          <div class="image-overlay">
-            Intel reaches 93% renewable electricity worldwide and restores nearly 9 billion gallons of water to local communities.
-          </div>
-          <p>
-            Massive recycling
-          </p>
-        </div>
-        <div class="scroll-item">
-          <h3>2024</h3>
-          <img src="images/2024.jpg" class="website-image">
-          <div class="image-overlay">
-            Intel expands AI for Climate Research initiatives, enabling smarter grids, renewable energy forecasting, and sustainable farming.
-          </div>
-          <p>
-            AI for Climate Research initiatives
-          </p>
+          <button class="carousel-control-prev" type="button" data-bs-target="#intelCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#intelCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
       </div>
-    </section>
-  </main>  
-  <main class="future-content">
-    <section class="future-section">
-      <h2>Looking Ahead: Intel's Vision for a Sustainable Future</h2>
-      <div class="future-flex-row">
-        <div class="future-box">
-          <img src="images/future-box-1.jpg" class="future-image">
-          <h4>100% renewable electricity in all operation</h4>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-primary py-4">
+    <h2 class="text-white mb-4 text-center">Looking Ahead: Intel's Vision for a Sustainable Future</h2>
+    <div class="container">
+      <div class="row justify-content-center g-4">
+        <div class="col-12 col-sm-6 col-lg-3 d-flex">
+          <div class="card">
+            <img src="images/future-box-1.jpg" class="card-img-top " >
+            <div class="card-body">
+              <h4 class="card-title text-success">100% renewable electricity in all operation</h4>
+            </div>
+          </div>
         </div>
-        <div class="future-box">
-          <img src="images/future-box-2.jpg" class="future-image">
-          <h4>Zero greenhouse gas emissions in global operations</h4>
+        <div class="col-12 col-sm-6 col-lg-3 d-flex">
+          <div class="card">
+            <img src="images/future-box-2.jpg" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title text-success">Zero greenhouse gas emissions in global operations</h4>
+            </div>
+          </div>
         </div>
-        <div class="future-box">
-          <img src="images/future-box-3.jpg" class="future-image">
-          <h4>50% supply chain carbon emissions reduction</h4>
+        <div class="col-12 col-sm-6 col-lg-3 d-flex">
+          <div class="card">
+            <img src="images/future-box-3.jpg" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title text-success">50% supply chain carbon emissions reduction</h4>
+            </div>
+          </div>
         </div>
-        <div class="future-box">
-          <img src="images/future-box-4.jpg" class="future-image">
-          <h4>Innovations in energy-efficient chips</h4>
+        <div class="col-12 col-sm-6 col-lg-3 d-flex">
+          <div class="card ">
+            <img src="images/future-box-4.jpg" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title text-success">Innovations in energy-efficient chips</h4>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </div>
+
+  <div class="container col-4">
+    <h2 class="text-center mt-4 mb-3 text-primary">Sign Up for our Sustainability Newsletter</h2>
+    <div class="mb-2">
+      <label for="formGroupExampleInput" class="form-label">Email</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your email">
+    </div>
+    <div class="mb-4">
+      <label for="formGroupExampleInput2" class="form-label">Password</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter your password">
+    </div>
+    <div class="text-center">
+      <button type="button" class="btn btn-outline-primary mb-4">Primary</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function applyRtlIfNeeded(){
+      const htmlElement = document.documentElement;
+      const lang = htmlElement.lang;
+      const rtlLanguages = ['ar', 'he', 'fa', 'ur']; // Add more RTL languages as needed
+      if (rtlLanguages.includes(lang)){
+        html.Element.setAttribute('dir', 'rtl');
+      } else {
+        htmlElement.setAttribute('dir', 'ltr');
+      }
+    }
+
+    function observeGoogleTranslate(){
+      const observer = new MutationObserver(() => {
+        applyRtlIfNeeded();
+      });
+
+      observer.observe(document.documentElement, {attributes: true, attributesFilter: ['lang']});
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      applyRtlIfNeeded();
+      observeGoogleTranslate();
+    });
+  </script>
 </body>
 </html>
